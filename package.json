@@ -1,0 +1,30 @@
+{
+  "name": "learn-reactjs-00-basic",
+  "version": "0.1.0",
+  "private": true,
+  "homepage": "./",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ifundeasy/learn-reactjs-00-basic"
+  },
+  "author": "Afa",
+  "scripts": {
+    "predeploy": "mkdir -p build && cp index.html app.js build && cp -r libs build",
+    "deploy": "rm -rf node_modules/gh-pages/.cache && gh-pages -d build"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "gh-pages": "^2.2.0"
+  }
+}
